@@ -20,11 +20,9 @@ Este proyecto es una interfaz de usuario desarrollada con Vite y TypeScript, dis
 Antes de iniciar, es necesario configurar la URL del backend. Crea un archivo `.env` en la raíz del proyecto y añade la siguiente variable:
 
 ```
-VITE_API_URL=http://localhost:3785/api/v1
+VITE_API_URL=http://localhost:3800/api/v1
+
 ```
-
-Si omites este paso, la aplicación intentará conectarse a `http://localhost:3800/api/v1` por defecto, que es la URL configurada en el backend.
-
 ### Configuración y Ejecución
 
 Sigue estos pasos para levantar el proyecto:
