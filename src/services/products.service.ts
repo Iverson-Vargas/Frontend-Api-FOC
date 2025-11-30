@@ -33,7 +33,7 @@ const normalizeProducts = (products: ApiProduct[] = []): ProductRow[] =>
   products.map((product) => ({
     id: product.id,
     name: product.name,
-    price: product.price ? `$${product.price.toFixed(2)}` : '$0.00',
+    price: product.price ? `$${parseFloat(String(product.price)).toFixed(2)}` : '$0.00',
     quantity: product.quantity?.toString() ?? '0',
     category: product.category_id ? `Categoría #${product.category_id}` : 'Sin categoría',
     area: product.area_id ? `Área #${product.area_id}` : 'Sin área',
@@ -74,4 +74,3 @@ export const listProducts = async (): Promise<ProductRow[]> => {
   // Por ahora retorna datos mock
   return FALLBACK_PRODUCTS
 }
-
