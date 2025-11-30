@@ -47,7 +47,7 @@ const normalizeCategories = (categories: ApiCategory[] = []): CategoryRow[] =>
 export const listCategories = async (): Promise<CategoryRow[]> => {
   // TODO: Implementar consumo de API aquí
   // Ejemplo de cómo debe quedar (descomenta y adapta):
-  /*
+ 
   try {
     const response = await httpGet<CategoriesResponse>('/categories')
     const categories = response.data?.categories
@@ -59,7 +59,7 @@ export const listCategories = async (): Promise<CategoryRow[]> => {
     console.warn('listCategories fallback:', error)
     return FALLBACK_CATEGORIES
   }
-  */
+
   
   // Por ahora retorna datos mock
   return FALLBACK_CATEGORIES

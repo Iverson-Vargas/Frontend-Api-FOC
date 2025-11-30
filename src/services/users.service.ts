@@ -51,7 +51,7 @@ const normalizeUsers = (users: ApiUser[] = []): UserRow[] =>
 export const listUsers = async (): Promise<UserRow[]> => {
   // TODO: Implementar consumo de API aquí
   // Ejemplo de cómo debe quedar (descomenta y adapta):
-  /*
+  
   try {
     const response = await httpGet<UsersResponse>('/users')
     const users = response.data?.users
@@ -63,7 +63,7 @@ export const listUsers = async (): Promise<UserRow[]> => {
     console.warn('listUsers fallback:', error)
     return FALLBACK_USERS
   }
-  */
+  
   
   // Por ahora retorna datos mock
   return FALLBACK_USERS

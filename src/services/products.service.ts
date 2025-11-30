@@ -57,7 +57,7 @@ const normalizeProducts = (products: ApiProduct[] = []): ProductRow[] =>
 export const listProducts = async (): Promise<ProductRow[]> => {
   // TODO: Implementar consumo de API aquí
   // Ejemplo de cómo debe quedar (descomenta y adapta):
-  /*
+ 
   try {
     const response = await httpGet<ProductsResponse>('/products')
     const products = response.data?.products
@@ -69,7 +69,7 @@ export const listProducts = async (): Promise<ProductRow[]> => {
     console.warn('listProducts fallback:', error)
     return FALLBACK_PRODUCTS
   }
-  */
+  
   
   // Por ahora retorna datos mock
   return FALLBACK_PRODUCTS

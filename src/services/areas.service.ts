@@ -48,7 +48,7 @@ const normalizeAreas = (areas: ApiArea[] = []): AreaRow[] =>
 export const listAreas = async (): Promise<AreaRow[]> => {
   // TODO: Implementar consumo de API aquí
   // Ejemplo de cómo debe quedar (descomenta y adapta):
-  /*
+  
   try {
     const response = await httpGet<AreasResponse>('/areas')
     const areas = response.data?.areas
@@ -60,7 +60,7 @@ export const listAreas = async (): Promise<AreaRow[]> => {
     console.warn('listAreas fallback:', error)
     return FALLBACK_AREAS
   }
-  */
+  
   
   // Por ahora retorna datos mock
   return FALLBACK_AREAS

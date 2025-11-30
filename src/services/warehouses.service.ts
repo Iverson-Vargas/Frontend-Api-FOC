@@ -45,7 +45,7 @@ const normalizeWarehouses = (warehouses: ApiWarehouse[] = []): WarehouseRow[] =>
 export const listWarehouses = async (): Promise<WarehouseRow[]> => {
   // TODO: Implementar consumo de API aquí
   // Ejemplo de cómo debe quedar (descomenta y adapta):
-  /*
+
   try {
     const response = await httpGet<WarehousesResponse>('/warehouses')
     const warehouses = response.data?.warehouses
@@ -57,7 +57,7 @@ export const listWarehouses = async (): Promise<WarehouseRow[]> => {
     console.warn('listWarehouses fallback:', error)
     return FALLBACK_WAREHOUSES
   }
-  */
+ 
   
   // Por ahora retorna datos mock
   return FALLBACK_WAREHOUSES
